@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:100,300,400,700|Playfair+Display:400,400i,700,700i,900,900i|Montserrat:300,400,700,900');
+
+
+$color1: #E73F1D;
+$color2: #0E0E0E;
+$text-font: "Arimo", sans-serif;
+$title-font: "Montserrat", serif;
+
+body{
+	background: $color2;
+	font-family: $text-font;
+	color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $title-font;
+}
+
+.logo{
+	img{
+		max-width: 100%;
+	}
+}
+
+a{
+	color: $color1;
+	&:hover{
+		color: lighten($color1, 10%);
+	}
+}
+.navbar{
+	z-index:100;
+	border: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: none;
+}
+
+
+header{
+	padding: 20px 0;
+	background: rgb(76,76,76);
+	background: -moz-linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
+	background: linear-gradient(45deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 );
+	border-bottom: 3px solid $color1;
+	h1{
+		font-size: 20px;
+		margin: 10px 0;
+	}
+	img{
+		min-width: 200px;
+	}
+}
+
+section{
+	padding: 80px 0;
+}
+
+.img-responsive{
+	&.force{
+		width: 100%;
+	}
+}
+
+
+.nosotros{
+	background: url("../img/bg1.jpg") center -150px no-repeat; 
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	blockquote{
+		background: rgba(0,0,0,0.7);
+		font-family: $title-font;
+		font-size: 21px;
+		font-weight: 400;
+		line-height: 30px;
+		strong{
+			color: $color1;
+		}
+	}
+}
+
+.servicios{
+	h2{
+		margin-top: 0; 
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		li{
+			text-transform: uppercase;
+			font-size: 14px;
+		    margin-bottom: 5px;
+		    font-weight: bold;
+		    counter-increment: item;
+		    &:before{
+				margin-right: 10px;
+	   	 		content: counter(item, decimal-leading-zero);
+	    		font-size: 25px;
+	    		line-height: 15px;
+	    		font-weight: 300;
+	    		background: $color1;
+	    		color: black;
+			    padding: 3px;
+			    text-align: center;
+			    width: 38px;
+			    display: inline-block;
+			    position: relative;
+			    top: 4px;
+			    font-family: $title-font;
+		    }
+		}
+		img{
+			top: 5px;
+			position: relative;
+		}
+	}
+
+	.copy{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		p{
+			font-size: 20px;
+			font-family: $title-font;
+		}
+	}
+}
+
+.sobre-tls{
+	background: $color1;
+	position: relative;
+	h2{
+		margin: 0;
+	}
+	p{
+		line-height: 30px;
+		&.first{
+			&:after{
+				content: "";
+				display: block;
+				width: 100px;
+				height: 4px;
+				background: white;
+				margin-top: 15px;
+			}
+		}
+	}
+	/*&:before{
+		content: "";
+		display: block;
+		background: $color1;
+		height: 100px;
+		width: 120%;
+		position: absolute;
+		transform: rotate(2deg);
+	    top: -60px;
+	    left: -40px;
+	}*/
+}
+
+
+.area-negocios{
+	ul{
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		li{
+			padding: 0;
+			background: #2F2F2F;
+			width: 50%;
+			box-sizing: border-box;
+			border: 10px solid black;
+			h2{
+				background: $color1;
+				padding: 10px;
+				margin-bottom: 10px;
+				font-family: $title-font;
+				display: block;
+				min-height: 20px;
+				text-transform: uppercase;
+				font-weight: 300;
+				font-size: 16px;
+				margin: 0;
+			}
+
+			p{
+				padding: 10px;
+			}
+		}
+	}
+
+	/*&:before{
+		content: "";
+		display: block;
+		background: black;
+		height: 100px;
+		width: 120%;
+		position: relative;
+		transform: rotate(2deg);
+	    top: -40px;
+	    left: -40px;
+	}
+	*/
+
+	.conciencia{
+		p{
+			line-height: 30px;
+			text-transform: uppercase;
+			strong{
+				color: $color1;
+				font-weight: 700;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.fotos{
+	background: #444;
+	padding: 15px 0;
+	ul{
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap; 
+		li{
+			max-width: 16.666666%;
+			padding: 5px;
+		}
+	}
+}
+
+footer{
+	padding: 30px 0;
+	background: #333;
+	.info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		img{
+			max-width: 100px;
+		}
+	}
+}

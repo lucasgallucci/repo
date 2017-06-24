@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:100,300,400,700|Playfair+Display:400,400i,700,700i,900,900i|Montserrat:300,400,700,900");
+body {
+  background: #0E0E0E;
+  font-family: "Arimo", sans-serif;
+  color: #ddd; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", serif; }
+
+.logo img {
+  max-width: 100%; }
+
+a {
+  color: #E73F1D; }
+  a:hover {
+    color: #ec664b; }
+
+.navbar {
+  z-index: 100;
+  border: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: none; }
+
+header {
+  padding: 20px 0;
+  background: #4c4c4c;
+  background: -moz-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  background: -webkit-linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  background: linear-gradient(45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 );
+  border-bottom: 3px solid #E73F1D; }
+  header h1 {
+    font-size: 20px;
+    margin: 10px 0; }
+  header img {
+    min-width: 200px; }
+
+section {
+  padding: 80px 0; }
+
+.img-responsive.force {
+  width: 100%; }
+
+.nosotros {
+  background: url("../img/bg1.jpg") center -150px no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  .nosotros blockquote {
+    background: rgba(0, 0, 0, 0.7);
+    font-family: "Montserrat", serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px; }
+    .nosotros blockquote strong {
+      color: #E73F1D; }
+
+.servicios h2 {
+  margin-top: 0; }
+.servicios ul {
+  list-style: none;
+  padding: 0; }
+  .servicios ul li {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    counter-increment: item; }
+    .servicios ul li:before {
+      margin-right: 10px;
+      content: counter(item,decimal-leading-zero);
+      font-size: 25px;
+      line-height: 15px;
+      font-weight: 300;
+      background: #E73F1D;
+      color: black;
+      padding: 3px;
+      text-align: center;
+      width: 38px;
+      display: inline-block;
+      position: relative;
+      top: 4px;
+      font-family: "Montserrat", serif; }
+  .servicios ul img {
+    top: 5px;
+    position: relative; }
+.servicios .copy {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .servicios .copy p {
+    font-size: 20px;
+    font-family: "Montserrat", serif; }
+
+.sobre-tls {
+  background: #E73F1D;
+  position: relative;
+  /*&:before{
+  	content: "";
+  	display: block;
+  	background: $color1;
+  	height: 100px;
+  	width: 120%;
+  	position: absolute;
+  	transform: rotate(2deg);
+      top: -60px;
+      left: -40px;
+  }*/ }
+  .sobre-tls h2 {
+    margin: 0; }
+  .sobre-tls p {
+    line-height: 30px; }
+    .sobre-tls p.first:after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: white;
+      margin-top: 15px; }
+
+.area-negocios {
+  /*&:before{
+  	content: "";
+  	display: block;
+  	background: black;
+  	height: 100px;
+  	width: 120%;
+  	position: relative;
+  	transform: rotate(2deg);
+      top: -40px;
+      left: -40px;
+  }
+  */ }
+  .area-negocios ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .area-negocios ul li {
+      padding: 0;
+      background: #2F2F2F;
+      width: 50%;
+      box-sizing: border-box;
+      border: 10px solid black; }
+      .area-negocios ul li h2 {
+        background: #E73F1D;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-family: "Montserrat", serif;
+        display: block;
+        min-height: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        margin: 0; }
+      .area-negocios ul li p {
+        padding: 10px; }
+  .area-negocios .conciencia p {
+    line-height: 30px;
+    text-transform: uppercase; }
+    .area-negocios .conciencia p strong {
+      color: #E73F1D;
+      font-weight: 700;
+      text-decoration: underline; }
+
+.fotos {
+  background: #444;
+  padding: 15px 0; }
+  .fotos ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .fotos ul li {
+      max-width: 16.666666%;
+      padding: 5px; }
+
+footer {
+  padding: 30px 0;
+  background: #333; }
+  footer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .info img {
+      max-width: 100px; }
+
+/*# sourceMappingURL=style.css.map */
